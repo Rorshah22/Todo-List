@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable linebreak-style */
+
 const btnAdd = document.querySelector('.btn-add-task');
 const toDoList = document.querySelector('.todo-list');
 const task = document.querySelector('.new-task');
@@ -6,7 +10,7 @@ const task = document.querySelector('.new-task');
 
 btnAdd.addEventListener('click', (e) => {
   e.preventDefault();
-  if (task.value === '') return;
+  if (task.value.trim() === '') return;
   createElement();
 });
 
@@ -22,6 +26,7 @@ function createElement() {
   btnClear.classList.add('btn-clear');
 
   tagP.textContent = task.value;
+  savePage();
   task.value = '';
 
   btnMark.textContent = 'MARK IMPORTANT';
@@ -46,7 +51,7 @@ function createElement() {
   });
   // При клике на задачу, т.е. тег li  вешаем класс done-task на тег р и
   tagLi.addEventListener('click', (e) => {
-    if (e.target === tagLi) {
+    if (e.target === tagLi || e.target === tagP) {
       if (btnMark.classList.contains('btn-mark-not-important')) {
         tagP.classList.toggle('done-task');
         tagP.classList.remove('done-task-after-none');
@@ -56,4 +61,16 @@ function createElement() {
       }
     }
   });
+  // loadPage();
 }
+
+function savePage() {
+  let output = '';
+  for (let i = 0; i < localStorage.length; i++) {
+    // console.log(localStorage.getItem(saveTask));
+    output += localStorage.setItem('save', task.value);
+  }
+}
+/* function loadPage() {
+  localStorage.getItem('save');
+} */

@@ -1,4 +1,8 @@
 .main {
+  .hidden {
+    display: none;
+  }
+
   .container {
     padding: 0 634px 0 47px;
 
@@ -9,7 +13,6 @@
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 39px;
     label {
       font-size: 12px;
       line-height: 15px;
@@ -43,6 +46,7 @@
   .field-add-task {
     position: relative;
   }
+
   .background-image {
     position: absolute;
     background: url(/src/images/design/background.svg) 99% 52px no-repeat;
@@ -55,6 +59,9 @@
   .list {
     .todo-list {
       margin-top: 22px;
+      .hidden {
+        display: none;
+      }
     }
     .todo-task {
       display: flex;
@@ -118,6 +125,7 @@
     }
 
     .todo-task:hover {
+      cursor: pointer;
       .btn-mark-important,
       .btn-clear {
         display: block;
