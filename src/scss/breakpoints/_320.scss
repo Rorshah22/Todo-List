@@ -1,10 +1,65 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    width: 85vw;
+  }
+  .btn-search {
+    left: 298px;
+    top: 4px;
+    width: 67px;
+    height: 63px;
+    background-size: 36px;
+  }
+  .form {
+    input {
+      margin-left: 20px;
+      padding-left: 75px;
+      width: 501px;
+      height: 71px;
+
+      &::placeholder {
+        font-size: 26px;
+      }
+    }
+  }
   .background-image {
-    top: 27.5vh;
+    top: 227px;
+
     left: 0;
   }
-  .btn-mark-important,
+  .btn-mark-important {
+    display: block;
+    width: 223px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 22px;
+  }
   .btn-clear {
     display: block;
+    width: 70px;
+    height: 70px;
+  }
+  .nav-list {
+    .items {
+      font-size: 30px;
+    }
+  }
+  .field-add-task__form {
+    label {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    #new-task {
+      height: 150px;
+      font-size: 32px;
+    }
+  }
+  .btn-add-task {
+    width: 249px;
+    height: 70px;
+    font-size: 32px;
+  }
+  .todo-task__text {
+    font-size: 32px;
+    padding-top: 10px;
   }
 }
