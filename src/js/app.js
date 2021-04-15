@@ -1,4 +1,4 @@
 import '../scss/app.scss';
-import './todo';
-import './navigation';
 import './search';
+import './navigation';
+import './todo';

@@ -42,14 +42,10 @@ navList.addEventListener('click', (e) => {
     console.log(navList);
     if (e.target.closest('#done') && !tagP[j].classList.contains('done-task')) {
       tagLi[j].classList.add('hidden');
-      // buttonMark[j].classList.add('btn-mark-important-hidden');
     } else if (e.target.closest('#active') && tagP[j].classList.contains('done-task')) {
       tagLi[j].classList.add('hidden');
-
-      // buttonMark[j].classList.remove('btn-mark-important-hidden');
     } else {
       tagLi[j].classList.remove('hidden');
-      // buttonMark[j].classList.remove('btn-mark-important-hidden');
     }
 
     if (e.target.closest('#done')) {
@@ -61,7 +57,6 @@ navList.addEventListener('click', (e) => {
   if (e.target.closest('#done')) {
     field.classList.add('hidden');
   }
-  // toLocal();
 });
 
 // При перезагрузке страницы, показать все li, удалить класс hidden

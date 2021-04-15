@@ -9,14 +9,14 @@
 </head>
 
 <body>
+  <div class="container">
+    <header class="header">
 
-  <header class="header">
-    <div class="container">
       <form class="form" action="#" method="get">
         <label for="search">
           <img src="../images/content/senla_logo.svg" alt="логотип компании Senla">
         </label>
-        <input id="search" type="search" name="search" placeholder="Search task for to do">
+        <input id="search" type="search" name="search" placeholder="Search task for to do" autofocus>
         <button class="btn-search" type="submit"></button>
 
       </form>
@@ -27,11 +27,11 @@
           <li id='done' class="items ">Done</li>
         </ul>
       </nav>
-    </div>
-  </header>
 
-  <main class="main">
-    <div class="container">
+    </header>
+
+    <main class="main">
+
       <div class="background-image"></div>
       <section class="field-add-task">
         <form action="" class="field-add-task__form">
@@ -40,21 +40,20 @@
           <button class="btn-add-task btn">ADD</button>
         </form>
 
-    </div>
-    </section>
-    </div>
+      </section>
 
-    <section class="list">
-      <div class="container">
+      <section class="list">
+
         <ul class="todo-list">
           <!-- <li class="todo-task">
             <p class="todo-task__text">пвап</p><button class="btn-mark-important">MARK IMPORTANT</button><button
               class="btn-clear"></button>
           </li> -->
         </ul>
-      </div>
-    </section>
-  </main>
+
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>
