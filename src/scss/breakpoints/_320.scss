@@ -1,16 +1,21 @@
-@media screen and (max-width: 360px) {
-  // .form {
-  //   input {
-  //     margin-left: 20px;
-  //     padding-left: 75px;
-  //     // width: 501px;
-  //     // height: 71px;
-
-  //     &::placeholder {
-  //       font-size: 26px;
-  //     }
-  //   }
-  // }
+@media screen and (max-width: 480px) {
+  .form {
+    label {
+      width: 100%;
+    }
+    input {
+      margin-left: 0;
+    }
+  }
+  .btn-search {
+    left: 3px;
+    top: 49px;
+  }
+  .nav-list,
+  .field-add-task,
+  .todo-list {
+    margin-left: 0;
+  }
   .background-image {
     top: 227px;
     left: 0;
@@ -19,5 +24,26 @@
   .btn-mark-important,
   .btn-clear {
     display: block;
+  }
+  .btn-mark-important {
+    align-self: flex-end;
+    margin-right: 60px;
+    font-size: 80%;
+    width: 108px;
+  }
+  .btn-clear {
+    align-self: flex-end;
+  }
+  .todo-task {
+    // flex-direction: column;
+  }
+  .mark-important {
+    padding-left: 15px;
+    &::before {
+      left: -14px;
+    }
+    &::after {
+      left: -16px;
+    }
   }
 }

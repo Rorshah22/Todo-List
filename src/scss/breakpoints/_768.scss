@@ -1,4 +1,4 @@
-@media screen and (min-width: 361px) and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .background-image {
     top: 227px;
     left: 0;
@@ -6,5 +6,14 @@
   .btn-mark-important,
   .btn-clear {
     display: block;
+  }
+  .btn-mark-important {
+    align-self: flex-start;
+    margin-right: -51px;
+    font-size: 80%;
+    width: 108px;
+  }
+  .btn-clear {
+    align-self: flex-end;
   }
 }
