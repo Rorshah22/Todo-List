@@ -33,21 +33,29 @@ btnAdd.addEventListener('click', (e) => {
 function createElement() {
   const newTagLi = document.createElement('li');
   const newTagP = document.createElement('p');
+  const newBtnRead = document.createElement('button');
   const newBtnMark = document.createElement('button');
   const newBtnClear = document.createElement('button');
   newTagLi.classList.add('todo-task');
   newTagP.classList.add('todo-task__text');
+  newBtnRead.classList.add('btn-read-more');
   newBtnMark.classList.add('btn-mark-important');
   newBtnClear.classList.add('btn-clear');
 
   newTagP.textContent = task.value;
   task.value = '';
   newBtnMark.textContent = 'MARK IMPORTANT';
+  newBtnRead.textContent = 'read more';
   toDoList.append(newTagLi);
   newTagLi.append(newTagP, newBtnMark, newBtnClear);
+  if (newTagP.textContent.length > 50) {
+    newTagLi.append(newBtnRead);
+    console.log(newTagP.textContent.length);
+  }
 }
 
 toDoList.addEventListener('click', (e) => {
+  const btnRead = document.querySelectorAll('.btn-read-more');
   const btnMark = document.querySelectorAll('.btn-mark-important');
   const tagP = document.querySelectorAll('.todo-task__text');
   const tagLi = document.querySelectorAll('.todo-task');
@@ -95,6 +103,13 @@ toDoList.addEventListener('click', (e) => {
       tagLi[i].classList.add('hidden');
     }
   }
+  // показать спрятанный текст
+  if (e.target.classList.contains('btn-read-more')) {
+    for (let i = 0; i < tagP.length; i++) {
+      const element = tagP[i];
 
+      console.log(e.target);
+    }
+  }
   toLocal();
 });

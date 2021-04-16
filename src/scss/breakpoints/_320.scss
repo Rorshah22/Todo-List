@@ -21,7 +21,7 @@
     left: 0;
   }
 
-  .btn-mark-important,
+  /*   .btn-mark-important,
   .btn-clear {
     display: block;
     position: absolute;
@@ -29,19 +29,20 @@
   }
   .btn-mark-important {
     margin-right: 6px;
-    left: 165px;
+    right: 50px;
     font-size: 80%;
     width: 108px;
   }
   .btn-clear {
     top: 56px;
-    left: 280px;
-  }
+    right: 0;
+  } */
   .todo-task {
     position: relative;
     // flex-direction: column;
   }
-  .mark-important {
+  /*  */
+  /*   .mark-important {
     padding-left: 15px;
     &::before {
       left: -14px;
@@ -49,5 +50,5 @@
     &::after {
       left: -16px;
     }
-  }
+  } */
 }
