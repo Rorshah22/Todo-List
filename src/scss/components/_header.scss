@@ -1,14 +1,12 @@
-.header {
-  padding-top: 20px;
-}
-
 .form {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
+
   input {
+    flex-grow: 1;
     margin-left: 20px;
     padding-left: 40px;
-    width: 582px;
     height: 40px;
     background: linear-gradient(0deg, #f6f6f6, #f6f6f6), #fefefe;
     border: 1px solid #e2e2e2;
@@ -29,7 +27,7 @@
 }
 .btn-search {
   position: absolute;
-  left: 197px;
+  left: 196px;
   top: 1px;
   border: none;
   outline: none;
@@ -41,7 +39,6 @@
 .nav-list {
   display: flex;
   text-align: center;
-  width: 759px;
   margin-left: 21px;
   margin-top: 27px;
   border-top: 2px solid #e2e2e2;

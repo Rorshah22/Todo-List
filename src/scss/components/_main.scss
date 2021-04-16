@@ -1,7 +1,10 @@
 .hidden {
   display: none;
 }
-
+.field-add-task {
+  position: relative;
+  margin-left: 24px;
+}
 .field-add-task__form {
   display: flex;
   flex-direction: column;
@@ -11,7 +14,7 @@
     color: #706e6b;
   }
   #new-task {
-    width: 759px;
+    max-width: 759px;
     height: 90px;
     border: 1px solid #dddbda;
     border-radius: 4px;
@@ -36,19 +39,13 @@
   box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.6));
 }
 
-.field-add-task {
-  position: relative;
-  margin-left: 24px;
-  width: 759px;
-}
-
 .background-image {
   position: absolute;
-  background: url(/src/images/design/background.svg) 99% 52px no-repeat;
-  width: 903px;
-  height: 790px;
-  top: 27.5vh;
-  left: 36.9vw;
+  background: url(/src/images/design/background.svg) 95% 57px no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  top: 158px;
   z-index: -1;
 }
 
@@ -62,10 +59,8 @@
 .todo-task {
   display: flex;
   position: relative;
-
   margin-bottom: 17px;
   padding: 16px 12px 13px 23px;
-  width: 763px;
   height: 109px;
   font-style: normal;
   font-weight: normal;
