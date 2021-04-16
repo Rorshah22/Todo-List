@@ -24,17 +24,21 @@
   .btn-mark-important,
   .btn-clear {
     display: block;
+    position: absolute;
+    align-self: flex-end;
   }
   .btn-mark-important {
-    align-self: flex-end;
-    margin-right: 60px;
+    margin-right: 6px;
+    left: 165px;
     font-size: 80%;
     width: 108px;
   }
   .btn-clear {
-    align-self: flex-end;
+    top: 56px;
+    left: 280px;
   }
   .todo-task {
+    position: relative;
     // flex-direction: column;
   }
   .mark-important {
