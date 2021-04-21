@@ -66,7 +66,6 @@ toDoList.addEventListener('click', (e) => {
   for (let i = 0; i < tagLi.length; i++) {
     if (btnMark[i] === e.target) {
       btnMark[i].classList.toggle('btn-mark-not-important');
-      // console.log('ki');
     }
     if (btnMark[i].classList.contains('btn-mark-not-important')) {
       btnMark[i].textContent = 'NOT IMPORTANT';

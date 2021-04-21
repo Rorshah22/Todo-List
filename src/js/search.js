@@ -28,6 +28,7 @@ search.oninput = function getSearch() {
   }
   // toLocal();
 };
+// ничего не делать при нажатии на ентер
 search.addEventListener('keypress', (e) => {
   if (e.keyCode === 13) {
     e.preventDefault();
