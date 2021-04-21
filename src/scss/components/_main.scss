@@ -39,12 +39,10 @@
 .background-image {
   max-width: 1440px;
   position: absolute;
-  background: url(/src/images/design/background.svg) 99% 72px no-repeat;
-
-  //
-  width: 110%;
+  width: 100%;
   height: 835px;
   top: 146px;
+  background: url(/src/images/design/background.svg) 99% 72px no-repeat;
 }
 
 .todo-list {
