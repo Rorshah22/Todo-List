@@ -20,6 +20,14 @@ function toLocal() {
   todoArray = toDoList.innerHTML;
   localStorage.setItem('todo', todoArray);
 }
+// счетчик символов
+const charLength = document.querySelector('.char-length');
+task.oninput = function getLength() {
+  charLength.textContent = 120 - task.value.length;
+  if (task.value.length === 100) {
+    charLength.style.color = 'red';
+  }
+};
 
 // Добавление задачи при нажатии на enter
 window.addEventListener('keydown', (e) => {
