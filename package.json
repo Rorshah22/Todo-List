@@ -4,15 +4,24 @@
   "version": "1.0.0",
   "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
   "homepage": "https://github.com/Rorshah22/Todo-List#readme",
-  "browserslist": [
-    "last 2 versions",
-    "> 5%"
-  ],
+    "browserslist": {
+    "production": [
+      "> 0.2%",
+      "ie 11"
+    ],
+    "modern": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/Rorshah22/Todo-List",
     "email": "hulk145@gmail.com"
   },
- "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.10.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

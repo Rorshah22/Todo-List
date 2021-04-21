@@ -19,6 +19,7 @@ module.exports = merge(webpackConfiguration, {
     historyApiFallback: true,
     compress: true,
     overlay: true,
+    // inline: true,
     hot: false,
     watchOptions: {
       poll: 300,

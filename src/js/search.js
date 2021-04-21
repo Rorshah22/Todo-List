@@ -3,9 +3,6 @@
 
 const search = document.querySelector('#search');
 
-// search.addEventListener('keyup', getSearch);
-//  && search.value.length > 2
-// search.addEventListener('keypress', getSearch);
 const toDoList = document.querySelector('.todo-list');
 
 search.oninput = function getSearch() {

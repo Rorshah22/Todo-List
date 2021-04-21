@@ -1,6 +1,3 @@
-.hidden {
-  display: none;
-}
 .field-add-task {
   position: relative;
   margin-left: 24px;
@@ -40,13 +37,14 @@
 }
 
 .background-image {
+  max-width: 1440px;
   position: absolute;
-  background: url(/src/images/design/background.svg) 95% 57px no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  top: 158px;
-  z-index: -1;
+  background: url(/src/images/design/background.svg) 99% 72px no-repeat;
+
+  //
+  width: 110%;
+  height: 835px;
+  top: 146px;
 }
 
 .todo-list {
@@ -75,7 +73,6 @@
   margin: 0;
   padding-right: 5px;
   margin-right: auto;
-  // flex-grow: 1;
 }
 
 .todo-task:hover {
@@ -147,7 +144,6 @@
 .btn-clear {
   display: none;
   flex-shrink: 0;
-  // margin-left: auto;
   margin-right: 12px;
   width: 40px;
   height: 40px;
@@ -165,6 +161,6 @@
   text-transform: uppercase;
   outline: none;
 }
-.btn-read-more {
+.hidden {
   display: none;
 }
