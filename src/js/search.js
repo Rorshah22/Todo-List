@@ -6,6 +6,9 @@ const search = document.querySelector('#search');
 const toDoList = document.querySelector('.todo-list');
 
 search.oninput = function getSearch() {
+  if (search.value.keyCode === 13) {
+    console.log('enter');
+  }
   const li = document.querySelectorAll('.todo-task');
   const tagsP = document.querySelectorAll('.todo-task__text');
   const filter = search.value.toLowerCase();
