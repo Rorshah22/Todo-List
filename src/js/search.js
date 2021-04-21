@@ -6,7 +6,7 @@ const search = document.querySelector('#search');
 const toDoList = document.querySelector('.todo-list');
 
 search.oninput = function getSearch() {
-  if (search.value.keyCode === 13) {
+  if (search.keyCode === 13) {
     console.log('enter');
   }
   const li = document.querySelectorAll('.todo-task');
@@ -28,3 +28,9 @@ search.oninput = function getSearch() {
   }
   // toLocal();
 };
+search.addEventListener('keypress', (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    console.log('enter');
+  }
+});
