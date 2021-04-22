@@ -1,0 +1,34 @@
+@media screen and (max-width: 480px) {
+  .form {
+    label {
+      width: 100%;
+    }
+    input {
+      margin-left: 0;
+    }
+  }
+  .btn-search {
+    left: 3px;
+    top: 49px;
+  }
+  .nav-list,
+  .field-add-task,
+  .todo-list {
+    margin-left: 0;
+  }
+  .background-image {
+    top: 227px;
+    left: 0;
+  }
+  .todo-task {
+    height: 166px;
+  }
+  .btn-clear {
+    top: 116px;
+    right: 0;
+  }
+
+  .todo-task {
+    position: relative;
+  }
+}

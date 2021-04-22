@@ -1,0 +1,54 @@
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Normalize */
+@import 'base/normalize';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Components */
+
+/* Browser specific styles */
+@import 'dirty/hacks';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Контейнер */
+.container {
+  max-width: 823px;
+  padding: 20px 20px 0 23px;
+  /*   background: url(/src/images/design/background.svg) no-repeat;
+  background-position: 99% 219px;
+  background-size: contain; */
+}
+
+/* Header style */
+@import 'components/header';
+
+/* Main style */
+@import 'components/main';
+
+/* Breakpoints */
+// @import 'breakpoints/touch';
+@import 'breakpoints/768';
+@import 'breakpoints/320';
