@@ -116,7 +116,7 @@ module.exports = {
       ],
     }),
   ].concat(htmlPluginEntries),
-  target: 'web',
+  // target: 'web',
   //для работы с ie11
-  // target: ['web', 'es5'],
+  target: ['web', 'es5'],
 };
