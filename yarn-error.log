@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: E:\senla\todo\package.json: Unexpected token / in JSON at position 272
+  SyntaxError: E:\senla\todo\package.json: Unexpected token } in JSON at position 343
       at JSON.parse (<anonymous>)
       at C:\Users\hulk1\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -28,19 +28,11 @@ npm manifest:
     "version": "1.0.0",
     "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
     "homepage": "https://github.com/Rorshah22/Todo-List#readme",
-    // "browserslist": [
-    //   "last 2 versions",
-    //   "> 5%"
-    // ],
       "browserslist": {
-      "production": [
-        "> 1%",
-        "ie 10"
-      ],
-      "modern": [
-        "last 1 chrome version",
-        "last 1 firefox version"
-      ],
+      "production": 
+        "> 5%",
+        "ie 11"
+   
     },
     "bugs": {
       "url": "https://github.com/Rorshah22/Todo-List",
