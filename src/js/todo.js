@@ -30,9 +30,12 @@ task.oninput = function getLength() {
 };
 
 // Добавление задачи при нажатии на enter
-window.addEventListener('keydown', (e) => {
+task.addEventListener('keydown', (e) => {
   // e.preventDefault();
-  if (e.keyCode === 13) btnAdd.click();
+  if (e.keyCode === 13) {
+    btnAdd.click();
+    task.blur();
+  }
 });
 
 //  Вешаем прослушку на клик по кнопке Add
@@ -41,6 +44,7 @@ btnAdd.addEventListener('click', (e) => {
   if (task.value.trim() === '') return;
   createElement();
   toLocal();
+  charLength.textContent = 120;
 });
 
 function createElement() {
